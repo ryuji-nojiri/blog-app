@@ -1,5 +1,5 @@
 
-export type QiitaReesponse = {
+export type QiitaResponse = {
     id: string;
     title: string;
     url: string;

@@ -1,11 +1,11 @@
 import axios from "axios";
 import Image from "next/image";
-import { QiitaReesponse, MicrocmsResponse } from "@/domain/Article";
+import { QiitaResponse, MicrocmsResponse } from "@/domain/Article";
 
 export default async function Home() {
 
   const getQiitaItems = async () => {
-    const response = await axios.get<QiitaReesponse[]>(
+    const response = await axios.get<QiitaResponse[]>(
       "https://qiita.com/api/v2/items?query=user:Sicut_study&per_page=4",
       {
         headers: {
